@@ -31,7 +31,7 @@ function Post({ post, deletePost }) {
       <div className="post-actions">
         <button onClick={handleLike}>
           <FaHeart className={liked ? "liked" : ""} />
-          {liked ? "Unlike" : "Like"} ({post.likes + (liked ? 1 : 0)})
+          {liked ? " Unlike" : " Like"} ({post.likes + (liked ? 1 : 0)})
         </button>
         <form onSubmit={handleComment}>
           <input
@@ -40,7 +40,7 @@ function Post({ post, deletePost }) {
             onChange={(e) => setComment(e.target.value)}
             placeholder="Add a comment"
           />
-          <button type="submit">Comment</button>
+          <button className="commentbutton" type="submit">Comment</button>
         </form>
         <div className="comments">
           {comments.map((cmt, index) => (

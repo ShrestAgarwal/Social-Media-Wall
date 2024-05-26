@@ -12,23 +12,19 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 15px 40px;
   background-color: #1B1A55;
   color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+h1{
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .menu-bar h1 {
   margin: 0;
 }
-
-
-.sevillana-regular {
-  font-family: "Sevillana", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
 
 .menu-options {
   display: flex;
@@ -88,7 +84,6 @@ body {
   /* max-width: 600px; */
 }
 
-
 .add-post {
   background-color: white;
   padding: 20px;
@@ -98,7 +93,6 @@ body {
   transition: transform 1s ease;
   flex-direction: column;
   width: 45rem; 
-
 }
 
 .add-post textarea {
@@ -114,7 +108,6 @@ body {
   height: 150px; 
   padding: 10px; 
   box-sizing: border-box;
-  
 }
 
 .add-post button {
@@ -128,6 +121,10 @@ body {
 
 .add-post button:hover {
   background-color: #1B1A55;
+}
+
+svg:hover{
+  cursor: pointer;
 }
 
 .posts {
@@ -176,10 +173,21 @@ body {
   color: #007bff;
   cursor: pointer;
   margin-right: 10px;
+  margin-bottom: 5px;
+  padding-left: 0px;
+}
+
+button.commentbutton{
+  padding-left: 5px;
 }
 
 .post-actions button:hover {
   color: #0056b3;
+  
+}
+
+.delete-icons button {
+  cursor:pointer
 }
 
 .comments p {
@@ -284,6 +292,7 @@ body {
   border-radius: 15px;
   max-width: 70%;
   word-wrap: break-word;
+  margin-bottom: 5px;
 }
 
 .chat-box input[type="text"] {
@@ -313,15 +322,12 @@ body {
   display: block;
 }
 
-
-
 /* Media queries for responsiveness */
 
 @media only screen and (max-height: 800px) {
   .chat-window {
     max-height: calc(100% - 10px);
   }
-
 }
 
 @media only screen and (max-width: 400px) {
@@ -330,15 +336,16 @@ body {
     right: 10px;
   }
   .add-post {
-    width: 5rem ;
+    width: 5rem;
   }
 }
 
 @media only screen and (max-width: 770px) {
   .add-post {
-    width: 35rem ;
+    width: 35rem;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .chat-window {
     width: calc(100% - 40px);
@@ -349,9 +356,10 @@ body {
     border-top-right-radius: 10px;
   }
   .add-post {
-    width: 25rem ;
+    width: 25rem;
   }
-  .posts{
+  .posts {
     width: 25rem;
   }
 }
+
