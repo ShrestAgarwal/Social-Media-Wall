@@ -17,7 +17,7 @@ This project is a simple social media wall built using ReactJS.
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/social-media-wall.git
+    git clone https://github.com/ShrestAgarwal/social-media-wall.git
     cd social-media-wall
     ```
 
@@ -35,14 +35,14 @@ The application will be available at `http://localhost:3000`.
 
 ## Assumptions
 
-- List of friends, notifications, and profile data are hardcoded.
-- The chat window is always visible at the bottom right corner of the screen.
-- The design is kept simple and can be modified as needed.
+- List of friends, notifications dropdown, and profile dropdown are hardcoded.
+- The chat window is always visible at the bottom right corner of the screen and is collapsed at start.
+- The design is kept simple.
 
 ## Project Structure
 
 - `public/`: Contains the HTML template.
-- `src/`: Contains all the React components and styles.
+- `src/`: Contains all the React components.
 - `App.js`: Main component that renders the entire application.
 - `components/`: Contains individual components for the menu bar, posts, chat window, etc.
 - `styles.css`: Contains the CSS styles for the application.

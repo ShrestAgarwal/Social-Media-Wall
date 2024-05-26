@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const friends = ["Alice", "Bob", "Charlie"];
+const friends = ["Shrest", "Akshat", "Parth", "XYZ", "Alice", "Bob"];
 
 function ChatWindow() {
   const [selectedFriend, setSelectedFriend] = useState(null);
